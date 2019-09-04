@@ -13,3 +13,7 @@ app.get('/', (req, res) => {
 
     res.render('index.ejs')
 });
+
+app.post('/show', (req, res) =>{
+    console.log('OI de ovo')
+});
