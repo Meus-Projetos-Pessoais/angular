@@ -1,6 +1,8 @@
 const { Schema, model}  = require('mongoose')
 const mongoose = require('mongoose')
 
+const score =  require('../score/score')
+
 const clienteSchema = new Schema({
     cpf:{
         type : String,
@@ -28,7 +30,7 @@ const clienteSchema = new Schema({
     },
     score:[
         {
-            pontuacao: String,
+            score,
     }]
 
 },
